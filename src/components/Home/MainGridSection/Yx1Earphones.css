@@ -1,0 +1,11 @@
+.yx1-earphones {
+    grid-area: yx1;
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 102%;
+    gap: 2rem;
+    padding-left: 10%;
+}

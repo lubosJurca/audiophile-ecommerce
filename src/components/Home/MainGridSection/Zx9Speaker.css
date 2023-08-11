@@ -1,0 +1,50 @@
+.zx9-speaker {
+    background: url(../../../assets/zx9Bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: zx9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-right: 6rem;
+}
+
+.zx9-wrapper {
+    width: 21.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.zx9-wrapper > h1 {
+    color: var(--pure-white);
+}
+
+.zx9-wrapper > p {
+    color: var(--pure-white);
+    opacity: 0.75;
+}
+
+@media screen and (max-width: 1100px) {
+    .zx9-speaker {
+        background: url(../../../assets/zx9SpeakerSmallBg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 3rem;
+        width: 100%;
+        padding-right: 0;
+        text-align: center;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .zx9-wrapper {
+    justify-content: center;
+    align-items: center;        
+    }
+}

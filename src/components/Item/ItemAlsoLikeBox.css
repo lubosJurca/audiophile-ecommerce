@@ -1,0 +1,24 @@
+.item-also-like-wrapper {
+  height: auto;
+  max-width: 22rem;
+  flex: 1;
+}
+
+.item-also-like-wrapper > h5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  
+}
+
+.also-like-image-wrapper {
+  background: var(--dark-grey);
+  border-radius: 0.5rem;
+}
+
+.also-like-image-wrapper > img {
+  transform: scale(0.6);
+  height: 19.875rem;
+}

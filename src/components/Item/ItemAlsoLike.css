@@ -1,0 +1,17 @@
+.item-also-like-container {
+  margin: 10rem 0;
+  text-align: center;
+}
+
+.item-also-like-container > h3 {
+  padding-bottom: 5rem;
+}
+
+.item-also-like-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  height: auto;
+  justify-content: center;
+  gap: 1rem;
+  row-gap: 3rem;
+}

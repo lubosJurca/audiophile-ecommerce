@@ -1,0 +1,19 @@
+.zx7-speaker {
+    background: url(../../../assets/zx7Bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    grid-area: zx7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10%;
+}
+
+.zx7-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}

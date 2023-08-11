@@ -1,0 +1,30 @@
+header {
+  background-color: var(--alternative-black);
+  color: var(--pure-white);
+  padding: 2rem 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+header > button:hover {
+  transition: 300ms;
+  color: var(--hover-orange);
+}
+
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 950px) {
+  .menu-icon {
+    display: block;
+  }
+
+  header > nav {
+    display: none;
+  }
+}
+
+

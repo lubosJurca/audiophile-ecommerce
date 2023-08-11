@@ -1,0 +1,12 @@
+.item-features > h3 {
+    margin-bottom: 2rem;
+}
+
+
+.item-features > p {
+    opacity: 0.5;
+}
+
+.item-features > p:first-of-type{
+    padding-bottom: 2rem ;
+}

@@ -1,0 +1,39 @@
+.box {
+  height: auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.box > img {
+  margin-bottom: -5rem;
+  filter: drop-shadow(0 17px 5px rgba(0, 0, 0, 0.5));
+}
+
+.shadow-box {
+  background-color: var(--dark-grey);
+  text-align: center;
+  width: 100%;
+  max-height: 12.75rem;
+  padding-top: 8rem;
+  border-radius: 1rem;
+}
+
+.shadow-box > a {
+  color: var(--pure-black);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.7rem;
+}
+
+.shadow-box > a:hover {
+  color: var(--hover-orange);
+}
+
+.navigate-next-icon {
+  color: var(--main-orange);
+}

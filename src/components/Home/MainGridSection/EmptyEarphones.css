@@ -1,0 +1,8 @@
+.empty-earphones {
+    grid-area: empty-earphones;
+}
+
+.empty-earphones > * {
+    width: 100%;
+    height: 100%;
+}

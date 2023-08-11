@@ -1,0 +1,40 @@
+.checkout-box-container {
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #cfcfcf;
+  border-bottom: none;
+  min-width: 19rem;
+  padding: 2rem;
+}
+
+.checkout-box-container > h6 {
+  margin-bottom: 2rem;
+}
+
+.checkbox-amount {
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1px;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.price-box:last-of-type {
+  margin-top: 1.5rem;
+}
+
+.grayish {
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 166.667% */
+}
+
+.orange-price{
+  color: var(--main-orange);
+}

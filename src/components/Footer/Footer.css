@@ -1,0 +1,159 @@
+.footer-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20.5rem, 1fr));
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  min-height: 36.75rem;
+  width: 80%;
+  margin: 0 auto 10rem auto;
+}
+
+.footer-image-wrapper {
+  background-image: url(../../assets/footerImg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+h2 {
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+}
+
+.info > p {
+  color: var(--pure-black);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.info > h2 > span {
+  color: var(--main-orange);
+}
+
+/* *********************   DARK FOOTER **************** */
+
+.dark-footer-container {
+  background: var(--main-dark);
+  min-height: 22.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0 2rem 0;
+}
+
+.dark-footer {
+  width: 80%;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "e e";
+}
+
+.dark-footer > img {
+  grid-area: a;
+}
+
+.dark-footer > nav {
+  grid-area: b;
+  justify-self: end;
+}
+
+.footer-text {
+  grid-area: c;
+  padding-right: 2em;
+}
+
+.dark-footer > p {
+  color: var(--pure-white);
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.icons {
+  list-style-type: none;
+  display: flex;
+  gap: 0.5rem;
+  grid-area: d;
+  align-self: end;
+  justify-self: end;
+}
+
+li {
+  color: var(--pure-white);
+  cursor: pointer;
+}
+
+li:hover {
+  color: var(--hover-orange);
+}
+
+.copyright {
+  color: e;
+}
+
+@media screen and (max-width: 1140px) {
+  .dark-footer {
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "e d";
+  }
+
+  .dark-footer > nav {
+    justify-self: baseline;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .footer-image-wrapper {
+    height: 18.75rem;
+  }
+
+  .info > * {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .dark-footer {
+    grid-template-areas:
+      "a a"
+      "b b"
+      "c c"
+      "e e"
+      "d d";
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dark-footer > nav {
+    justify-self: center;
+  }
+
+  .dark-footer > nav > ul {
+    grid-area: b;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dark-footer > * {
+    justify-self: center;
+  }
+
+  .footer-text {
+    padding-right: 0;
+  }
+
+  .copyright {
+    justify-self: center;
+    grid-area: e;
+  }
+}

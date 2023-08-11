@@ -1,0 +1,28 @@
+.in-the-box-container > h3{
+    margin-bottom: 2rem;
+}
+
+.in-the-box-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.in-the-box-item {
+  color: rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+
+.in-the-box-item:hover {
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.number-of-items-in-the-box {
+  color: var(--main-orange);
+  margin-right: 1rem;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 25px;
+}

@@ -1,0 +1,43 @@
+.btn {
+    padding: 0.9em 1.875em;
+    font-weight: 700;
+    font-size: 0.813rem;
+    cursor: pointer;
+    line-height: 1.125rem;
+    letter-spacing: 1px;
+    font-style: normal;
+    transition: 300ms;
+    border: none;
+}
+
+.orange {
+    background-color: var(--main-orange);
+    color: var(--pure-white);
+}
+
+.orange:hover{
+    background-color: var(--hover-orange);
+    color: var(--pure-white);
+}
+
+.black {
+    background-color: var(--pure-black);
+    color: var(--pure-white);
+    border: none;
+}
+
+.black:hover {
+    background-color: #4C4C4C;
+    color: var(--pure-white);
+}
+
+.transparent{
+    background-color: transparent;
+    color: var(--pure-black);
+    border: 1px solid black;
+}
+
+.transparent:hover {
+    background-color: var(--pure-black);
+    color: var(--pure-white);
+}

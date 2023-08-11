@@ -1,0 +1,29 @@
+.grid {
+    display: grid;
+    grid-template-rows: repeat(4,20rem);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "zx9 zx9"
+        "zx9 zx9"
+        "zx7 zx7"
+        "empty-earphones yx1";
+    gap: 1.875rem;
+    margin: 5rem auto;
+}
+
+.grid > * > section {
+    border-radius: 1rem;
+}
+
+@media  screen and (max-width: 768px ) {
+    .grid{
+        column-gap: 0.5rem;
+        grid-template-rows: repeat(5,20rem);
+        grid-template-areas: 
+        "zx9 zx9"
+        "zx9 zx9"
+        "zx7 zx7"
+        "empty-earphones empty-earphones"
+        "yx1 yx1";
+    }
+}

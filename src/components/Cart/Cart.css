@@ -1,0 +1,47 @@
+.cart-flex {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.75rem;
+}
+
+.cart-flex > button {
+  border: none;
+  background: transparent;
+  color: var(--pure-black);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  text-decoration-line: underline;
+  opacity: 0.5;
+}
+
+.cart-flex > p {
+  color: var(--pure-black);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.5;
+}
+
+.modal-children > a {
+    display: flex;
+    justify-content: center;
+}
+
+.remove-all-btn {
+  cursor: pointer;
+}
+
+.checkout {
+  background: var(--main-orange);
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout:hover {
+  color: var(--pure-white);
+}
+

@@ -1,0 +1,17 @@
+.image-wrapper {
+    background: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    flex: 1;
+}
+
+.item-image {
+    margin-top: 1rem;
+    margin-bottom: -4rem;
+    max-width: 100%;
+}
+

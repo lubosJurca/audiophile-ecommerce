@@ -1,0 +1,21 @@
+#basic-menu > * > ul {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+}
+
+#link > a {
+    color: black;
+}
+
+#link > a:hover {
+    color: var(--hover-orange);
+}
+
+#basic-button {
+    color: var(--pure-white);
+}
+
+#basic-button:hover {
+    color: var(--hover-orange);
+}

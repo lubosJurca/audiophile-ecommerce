@@ -1,0 +1,10 @@
+.item-header {
+    background: var(--pure-black);
+    color: var(--pure-white);
+    margin-left: -12.5%;
+    width: 125%;
+    height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

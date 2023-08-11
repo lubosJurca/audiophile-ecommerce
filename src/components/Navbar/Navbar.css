@@ -1,0 +1,17 @@
+ul {
+    display: flex;
+    align-items: center;
+    gap: 2.125rem;
+}
+
+
+.active{
+    transition: 300ms;
+    color: var(--main-orange);
+}
+
+
+a:hover{
+    color: var(--hover-orange);
+    transition: 300ms;
+}
