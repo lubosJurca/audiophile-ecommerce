@@ -7,7 +7,7 @@
   border-radius: 8px;
   padding: 3rem;
   max-width: 100%;
-  
+  height: auto;
 }
 
 .orange-circle {
@@ -115,6 +115,10 @@
 }
 
 @media screen and (max-width: 560px) {
+  
+  .modal-box {
+    padding: 1.5rem 2.5rem;
+  }
 
   .items-final-container {
     flex-direction: column;
