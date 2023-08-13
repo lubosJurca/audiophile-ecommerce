@@ -15,7 +15,7 @@ import { Link } from "react-router-dom";
 
 function CheckoutFinal(props) {
   const cartCtx = useContext(CartContext);
-  const [showAll, setShowAll] = useState(true);
+  const [showAll, setShowAll] = useState(false);
 
   const shipping = 50;
   const tax = +((cartCtx.totalAmount / 100) * 20).toFixed(0);
@@ -66,7 +66,7 @@ function CheckoutFinal(props) {
             )}
             {!showAll && (
               <div className="items-final-wrapper">
-                {cartCtx.items.slice(1).map((item) => {
+                {cartCtx.items.slice(0,1).map((item) => {
                   return <CheckoutItemBox key={item.id} {...item} />;
                 })}
               </div>
