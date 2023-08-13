@@ -17,7 +17,7 @@ import "./Checkout.css";
 
 
 function Checkout() {
-  const [isOpen,setIsOpen] = useState(false)
+  const [isOpen,setIsOpen] = useState(true)
 
   const [customerInfo, setCustomerInfo] = useState({
     name: "",
