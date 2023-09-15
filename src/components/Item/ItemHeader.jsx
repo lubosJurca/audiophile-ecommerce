@@ -1,8 +1,8 @@
 import "./ItemHeader.css"
 
-function ItemHeader( { title }) {
+function ItemHeader( { children }) {
   return (
-    <div className="item-header"><h2>{title}</h2></div>
+    <div className="item-header"><h2>{children}</h2></div>
   )
 }
 

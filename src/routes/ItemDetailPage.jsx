@@ -10,9 +10,12 @@ function ItemDetailPage() {
   const itemId = useParams();
   const data = useContext(ProductsContext).products
   
-  const product = data?.filter((item) => {
-    return item.id === +itemId.productId;
+  
+  const product = data.filter((item) => {
+    return item.id === itemId.productId;
   });
+
+  
 
 
   return (

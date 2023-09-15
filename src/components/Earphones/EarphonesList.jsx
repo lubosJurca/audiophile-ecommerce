@@ -1,5 +1,5 @@
 import { ProductsContext } from "../../products/products-context";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import { Fade } from "react-awesome-reveal";
 
@@ -11,8 +11,7 @@ function EarphonesList() {
 
   return (
     <>
-      {data === undefined && <p>Loading...</p>}
-      {data?.slice(5, 6).map((item) => {
+      {data.slice(5, 6).map((item) => {
         return <ItemBox key={item.id} {...item} />;
       })}
     </>

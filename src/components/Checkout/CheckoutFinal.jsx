@@ -21,7 +21,7 @@ function CheckoutFinal(props) {
   const tax = +((cartCtx.totalAmount / 100) * 20).toFixed(0);
   const grandTotal = cartCtx.totalAmount + tax + shipping;
 
-  let finalWrapper;
+  
 
   if (showAll) {
     finalWrapper = (

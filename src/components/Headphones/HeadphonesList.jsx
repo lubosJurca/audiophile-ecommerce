@@ -10,8 +10,6 @@ function HeadphonesList() {
 
   return (
     <>
-      {data === undefined && <p>Loading..</p> }
-     
       {data?.slice(0, 3).map((item) => {
         return <ItemBox key={item.id} {...item} />;
       })}

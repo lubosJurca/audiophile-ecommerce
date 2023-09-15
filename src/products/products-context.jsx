@@ -1,20 +1,37 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // firebase
-import { db } from "../firebase/config";
-import { collection } from "firebase/firestore";
-import { useCollectionData } from "react-firebase-hooks/firestore";
+import { getProducts } from "../firebase/config";
 
 export const ProductsContext = React.createContext({
   products: [],
 });
 
 export default (props) => {
-  const productsRef = collection(db, "products");
-  const [docs, loading, error] = useCollectionData(productsRef);
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const loadProducts = async () => {
+      setLoading(true);
+      try {
+        const data = await getProducts();
+        setProducts(data);
+      } catch (err) {
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadProducts();
+  }, []);
 
   return (
-    <ProductsContext.Provider value={{ products: docs }}>
+    <ProductsContext.Provider
+      value={{ products: products, loading: loading, error: error }}
+    >
       {props.children}
     </ProductsContext.Provider>
   );
